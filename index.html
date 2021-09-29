@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/111412ee7e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>R P S L S</title>
 </head>
@@ -14,20 +15,20 @@
         <p class="scores">Computer <span class="cpuscore">0</span></p>
 
         <div class="selection">
-            <button class="btn rock">Rock</button>
-            <button class="btn paper">Paper</button>
-            <button class="btn scissors">Scissors</button>
-            <button class="btn lizard">Lizard</button>
-            <button class="btn spock">Spock</button>
+            <button class="btn btn--rock"><i class="fas fa-hand-rock"></i></button>
+            <button class="btn btn--paper"><i class="fas fa-hand-paper"></i></button>
+            <button class="btn btn--scissors"><i class="fas fa-hand-scissors"></i></button>
+            <button class="btn btn--lizard"><i class="fas fa-hand-lizard"></i></button>
+            <button class="btn btn--spock"><i class="fas fa-hand-spock"></i></button>
         </div>
-        
-        <div class="game-options">
-            <p class="instructions">How To Play</p>
-            <p class="playto">playto</p>
-            <p class="reset">reset</p>
-        </div>
+       
     </div>
-
+    <div class="game-options">
+            <button class="instructions">How To Play</button>
+            <p class="game-number">play to:</p>
+            <input id="play-to" type="number">
+            <button class="reset">reset</button>
+    </div>
  
    
 
