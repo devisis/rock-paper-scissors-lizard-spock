@@ -1,10 +1,10 @@
 # Rock Paper Scissors Lizard Spock
 
-The first known mention of the game of Rock Paper Scissors was in the book 'Wuzazu'. The game dates back to the time of the Chinese Han dynasty (206 BC – 220 AD). From then til now it has been adapted in different ways. This is one of those fun adaptations. My work will target those who aim to play a quick game and fans of this adaptation.
+The first known mention of the game of Rock Paper Scissors was in the book 'Wuzazu'. The game dates back to the time of the Chinese Han dynasty (206 BC – 220 AD). From then til now it has been adapted in different ways. This is one of those fun adaptations. My work will target those who aim to play a quick game with the element of chance and fans of the rock paper scissors lizard spock adaptation.
 
 # UX
 
-## User Goal
+## Exernal User Goal
 The site user wants to play an online game that has the element of chance.
 
 ## User Stories
@@ -14,6 +14,24 @@ The site user wants to play an online game that has the element of chance.
 - As a user I should be able to choose the amount of game I want to play to.
 - As a user I should be able to distinguise between rock, paper, scissors, lizard and spock.
 - As a user I should be able to track my score.
+
+## Site Owner Goal
+The site goal is to provide a game to entertain online users.
+
+# UI
+
+# Wireframe
+
+[Desktop and Mobile View](https://i.imgur.com/vY4LbPr.png)
+# Features 
+
+# Potential Future Features
+
+# Testing 
+
+## Bugs
+
+## Validator Testing
 
 # Deployment
 
@@ -31,3 +49,6 @@ To make a local copy, you can type the following command in your IDE terminal:
 Alternatively, if you are using Gitpod, you can use this link:
 - [Open in Gitpod](https://gitpod.io/#https://github.com/devisis/rock-paper-scissors-lizard-spock)
 
+# Credits
+
+## Media
