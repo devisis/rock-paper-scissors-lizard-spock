@@ -1,0 +1,102 @@
+/*General Styling*/
+
+body {
+    text-align: center;
+    background-color: black;
+    margin: 0;
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    width: 50%;
+}
+
+a{
+    color: #fca311;
+    text-decoration: none;
+
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 900;
+    font-style: oblique;
+    color: #fca311;  
+}
+
+p{
+    color: #fca311;
+    font-size: 2em;
+}
+
+/* Button Styling */
+p button{
+    border-style: none;
+}
+
+button{
+    background-color: #1f315af0;
+    color: #ffa260;
+    border: 2px groove;
+    border-radius: 10%;
+    padding: 1em 2em;  
+    font-size: 1em;
+    margin: 3%;
+    transition: all 0.2em;
+}
+
+.game-options button{
+    background-color: black;
+    color: white;
+    border: 3px solid #ffa260;
+}  
+.selection button:hover {
+    border-color: #ffa260;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+/*--- Game Layout ---*/
+
+.game-area{
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: #14213d;
+    min-height: fit-content;
+    width: 60%;
+    margin: 2% auto;
+    border: 2.5px;
+    border-style: groove;
+    border-radius: 1%;
+    
+}
+.score-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.scores{
+    background-color: #1f315af0;
+    padding: 1em;
+    border: 2px;
+    border-style: double none;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.selection {
+    padding: 0.5em;    
+    margin: 1rem 0;
+
+}
+
+
+
+
