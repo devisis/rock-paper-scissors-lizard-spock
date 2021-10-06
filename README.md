@@ -2,7 +2,7 @@
 
 The first known mention of the game of Rock Paper Scissors was in the book 'Wuzazu'. The game dates back to the time of the Chinese Han dynasty (206 BC – 220 AD). From then til now it has been adapted in different ways. This is one of those fun adaptations. My work will target those who aim to play a quick game with the element of chance and fans of the rock paper scissors lizard spock adaptation.
 
-# UX
+## UX
 
 ## Exernal User Goal
 The site user wants to play an online game that has the element of chance.
@@ -18,22 +18,40 @@ The site user wants to play an online game that has the element of chance.
 ## Site Owner Goal
 The site goal is to provide a game to entertain online users.
 
-# UI
+### Colour Scheme
+Coolors.co - picked two colours i felt complimented each other well // 
 
-# Wireframe
+### Typography
+font-awesome - used the icons from font awesome for the rock, paper, scissors, lizard, and spock options as they were easy to identify.
+
+### Wireframe
 
 [Desktop and Mobile View](https://i.imgur.com/vY4LbPr.png)
-# Features 
 
-# Potential Future Features
+## Features 
 
-# Testing 
+## Existing Features
 
-## Bugs
+### Features Left to Implement
 
-## Validator Testing
+## Technologies Used
+ - HTML
+ - CSS
+ - JS
+ - Gitpod
+ - GitHub
+ 
+## Testing 
 
-# Deployment
+### Code Validation
+
+### Browser Compatibility
+
+### Responsiveness
+
+### Unfixed Bugs
+
+## Deployment
 
 This site was deployed to GitHub pages. To deploy the project to GitHub Pages, follow these steps:
 - navigate to the [repository](https://github.com/devisis/rock-paper-scissors-lizard-spock)
@@ -41,7 +59,7 @@ This site was deployed to GitHub pages. To deploy the project to GitHub Pages, f
 - select the **main** branch from the dropdown, and click "Save*
 - the site is now deployed at [rpsls](rpsls)
 
-## Local Deployment
+### Local Deployment
 
 To make a local copy, you can type the following command in your IDE terminal:
 - `git clone https://github.com/devisis/rock-paper-scissors-lizard-spock`
@@ -49,6 +67,9 @@ To make a local copy, you can type the following command in your IDE terminal:
 Alternatively, if you are using Gitpod, you can use this link:
 - [Open in Gitpod](https://gitpod.io/#https://github.com/devisis/rock-paper-scissors-lizard-spock)
 
-# Credits
+## Credits
 
-## Media
+### Media
+- fontawesome
+
+### Acknowledgements
