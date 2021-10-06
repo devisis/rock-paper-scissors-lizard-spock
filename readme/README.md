@@ -82,3 +82,4 @@ Alternatively, if you are using Gitpod, you can use this link:
 - fontawesome
 
 ### Acknowledgements
+- Rules gathered from https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/
