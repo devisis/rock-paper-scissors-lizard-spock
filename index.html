@@ -11,13 +11,13 @@
 </head>
 
 <body>
-
+    <!--Main Heading-->
     <header>
         <h1>Rock Papper Scissors Lizard Spock</h1>
     </header>
-
+    <!--Main game block-->
     <main class="game-area">
-
+        <!--The score display section-->
         <section class="score-section">
             <p class="scores">Player
                 <i class="fas fa-ghost"></i>
@@ -28,6 +28,7 @@
                 <span id="cpuscore">0</span>
             </p>
         </section>
+        <!--Select how many games you want to play-->
         <div class="playto">
             <label for="playto" class="game-number">First Player To:</label>
             <select name="playto" id="playto">
@@ -42,7 +43,7 @@
             </select>
         </div>
         <p id="feedback">click an option to play!</p>
-
+        <!--Button options for the game-->
         <section class="selection">
             <button data-type="rock" class="btn btn--rock">
                 <i class="fas fa-hand-rock"></i>
@@ -62,12 +63,13 @@
         </section>
         <section class="game-options">
             <button data-type="reset" class="reset">Reset</button>
+            <button class="instructions">Instructions</button>
         </section>
     </main>
-
+    <!--fontawesome icons and js script-->
     <script src="https://kit.fontawesome.com/111412ee7e.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
-    
+
 </body>
 
 </html>
