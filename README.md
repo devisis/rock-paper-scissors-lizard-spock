@@ -57,7 +57,7 @@ This site was deployed to GitHub pages. To deploy the project to GitHub Pages, f
 - navigate to the [repository](https://github.com/devisis/rock-paper-scissors-lizard-spock)
 - from the Settings page, click on "Pages"
 - select the **main** branch from the dropdown, and click "Save*
-- the site is now deployed at [rpsls](rpsls)
+- the site is now deployed at [rpsls](https://devisis.github.io/rock-paper-scissors-lizard-spock/)
 
 ### Local Deployment
 
@@ -70,6 +70,7 @@ Alternatively, if you are using Gitpod, you can use this link:
 ## Credits
 
 ### Media
+
 - fontawesome
 
 ### Acknowledgements
