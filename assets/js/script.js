@@ -22,33 +22,69 @@ document.addEventListener("DOMContentLoaded", function() {
 function calcWinner(p1) {
     let feedback = document.querySelector("#feedback");
     let cpu = calcCPU();
-    
-    // Continues if game not a draw
+
+    //Change fontaswesome
+    document.querySelector("i").className = `btn btn--${p1}`;
+    document.querySelectorAll("i")[1].className = `btn btn--${cpu}`;
+
+    //Continues if game not a draw
     if (p1 !== cpu) {
 
         //Rock beats scissors & lizard
         if (p1 === "rock") { 
             if (cpu === "scissors" || cpu === "lizard"){
-            feedback.innerText =`${p1} beats ${cpu} player 1 wins!`;
+            feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
             p1Score();
             } else {
-            feedback.innerText =`${p1} loses to ${cpu} cpu wins!`;
+            feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
             cpuScore();
             }
         }
 
         //Paper beats rock & spock
-        else if (p1 === "paper") {}
+        else if (p1 === "paper") {
+            if (cpu === "rock" || cpu === "spock"){
+                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                p1Score();
+                } else {
+                feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
+                cpuScore();
+                }
+        }
 
         //Scissors beats paper & lizard
-        else if (p1 === "scissors") {}
+        else if (p1 === "scissors") {
+            if (cpu === "paper" || cpu === "lizard"){
+                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                p1Score();
+                } else {
+                feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
+                cpuScore();
+                }
+        }
 
         // Lizard beats paper & spock
-        else if (p1 === "lizard") {}
+        else if (p1 === "lizard") {
+            if (cpu === "paper" || cpu === "spock"){
+                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                p1Score();
+                } else {
+                feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
+                cpuScore();
+                }
+        }
         //Spock beats scissors $ rock
-        else if (p1 === "spock") {}        
+        else if (p1 === "spock") {
+            if (cpu === "scissors" || cpu === "rock"){
+                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                p1Score();
+                } else {
+                feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
+                cpuScore();
+                }
+        }        
     } else {
-        feedback.innerText = "player and cpu draw";
+        feedback.innerText = `player 1 chose ${p1} cpu chose ${cpu} - draw!`;
     }
 
 }
@@ -68,8 +104,8 @@ function calcCPU() {
  */
 
 function p1Score() {
-    let oldScore = parseInt(document.querySelector(".p1score").innerText);
-    document.querySelector(".p1score").innerText = ++oldScore;
+    let oldScore = parseInt(document.querySelector("#p1score").innerText);
+    document.querySelector("#p1score").innerText = ++oldScore;
 }
 
 /**
@@ -77,8 +113,8 @@ function p1Score() {
  */
 
 function cpuScore() {
-    let oldScore = parseInt(document.querySelector(".cpuscore").innerText);
-    document.querySelector(".cpuscore").innerText = ++oldScore;
+    let oldScore = parseInt(document.querySelector("#cpuscore").innerText);
+    document.querySelector("#cpuscore").innerText = ++oldScore;
 }
 
 
@@ -86,6 +122,16 @@ function cpuScore() {
  * Resets the scores
  */
 function reset() {
-    document.querySelector(".p1score").innerText = "0";
-    document.querySelector(".cpuscore").innerText = "0";
+    document.querySelector("#p1score").innerText = "0";
+    document.querySelector("#cpuscore").innerText = "0";
 }
+
+/**
+ * 
+ */
+
+const winSelector = document.querySelector("#playto");
+let winningScore= 3;
+let isGameOver = false;
+
+function updateScores(){}

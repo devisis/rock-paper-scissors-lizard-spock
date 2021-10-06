@@ -29,7 +29,7 @@ h1{
 
 p{
     color: #fca311;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Button Styling */
@@ -71,12 +71,11 @@ p button{
     box-sizing: border-box;
     background-color: #14213d;
     min-height: fit-content;
-    width: 60%;
+    width: 75%;
     margin: 2% auto;
     border: 2.5px;
     border-style: groove;
     border-radius: 1%;
-    
 }
 .score-section{
     display: grid;
@@ -103,6 +102,11 @@ p button{
 
 }
 
-
+.playto{
+    margin: 1em 0 0 0;
+    padding: 1em 0 0 0;
+    font-size: 1em;
+    color: #ffa260;
+}
 
 
