@@ -40,14 +40,22 @@ font-awesome - used the icons from font awesome for the rock, paper, scissors, l
  - JS
  - Gitpod
  - GitHub
- 
+ - invision
+
 ## Testing 
+
+All the buttons were working correctly. I tested this by by clicking on each one and making sure the right text popped up for each option.
+
 
 ### Code Validation
 
 ### Browser Compatibility
 
 ### Responsiveness
+
+Using the developer tools on Google Chrome I tested my website's dimentions on iPhone 5/SE, iPhone X, iPad and the Pixel 2 on both landscape and portrait modes. 
+
+### Testing User Stories
 
 ### Unfixed Bugs
 
@@ -62,7 +70,7 @@ This site was deployed to GitHub pages. To deploy the project to GitHub Pages, f
 ### Local Deployment
 
 To make a local copy, you can type the following command in your IDE terminal:
-- `git clone https://github.com/devisis/rock-paper-scissors-lizard-spock`
+- `git clone https://github.com/devisis/rock-paper-scissors-lizard-spock.git`
 
 Alternatively, if you are using Gitpod, you can use this link:
 - [Open in Gitpod](https://gitpod.io/#https://github.com/devisis/rock-paper-scissors-lizard-spock)
