@@ -33,7 +33,7 @@ function calcWinner(p1) {
         //Rock beats scissors & lizard
         if (p1 === "rock") { 
             if (cpu === "scissors" || cpu === "lizard"){
-            feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+            feedback.innerText =`${p1} beats ${cpu} - you win!`;
             p1Score();
             } else {
             feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
@@ -44,7 +44,7 @@ function calcWinner(p1) {
         //Paper beats rock & spock
         else if (p1 === "paper") {
             if (cpu === "rock" || cpu === "spock"){
-                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                feedback.innerText =`${p1} beats ${cpu} - you win!`;
                 p1Score();
                 } else {
                 feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
@@ -55,7 +55,7 @@ function calcWinner(p1) {
         //Scissors beats paper & lizard
         else if (p1 === "scissors") {
             if (cpu === "paper" || cpu === "lizard"){
-                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                feedback.innerText =`${p1} beats ${cpu} - you win!`;
                 p1Score();
                 } else {
                 feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
@@ -66,7 +66,7 @@ function calcWinner(p1) {
         // Lizard beats paper & spock
         else if (p1 === "lizard") {
             if (cpu === "paper" || cpu === "spock"){
-                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                feedback.innerText =`${p1} beats ${cpu} - you win!`;
                 p1Score();
                 } else {
                 feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
@@ -76,7 +76,7 @@ function calcWinner(p1) {
         //Spock beats scissors $ rock
         else if (p1 === "spock") {
             if (cpu === "scissors" || cpu === "rock"){
-                feedback.innerText =`${p1} beats ${cpu} - player 1 wins!`;
+                feedback.innerText =`${p1} beats ${cpu} - you win!`;
                 p1Score();
                 } else {
                 feedback.innerText =`${p1} loses to ${cpu} - cpu wins!`;
@@ -84,7 +84,7 @@ function calcWinner(p1) {
                 }
         }        
     } else {
-        feedback.innerText = `player 1 chose ${p1} cpu chose ${cpu} - draw!`;
+        feedback.innerText = `you chose: ${p1} cpu chose: ${cpu} - draw!`;
     }
 
 }
@@ -131,7 +131,7 @@ function reset() {
  */
 
 const winSelector = document.querySelector("#playto");
-let winningScore= 3;
+let winningScore = 3;
 let isGameOver = false;
 
 function updateScores(){}
