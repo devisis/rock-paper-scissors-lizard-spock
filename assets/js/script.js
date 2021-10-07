@@ -99,12 +99,25 @@ function calcCPU() {
 }
 
 /**
+ * Number of games played
+ */
+let p1 = {
+    score: 0
+};
+let cpu = {
+    score: 0
+};
+
+let select = document.querySelector("#playto");
+let limit = 3;
+/**
  * Increment payer score by 1
  */
 
 function p1Score() {
     let oldScore = parseInt(document.querySelector("#p1score").innerText);
     document.querySelector("#p1score").innerText = ++oldScore;
+    p1.score = oldScore++;
 }
 
 /**
@@ -114,6 +127,7 @@ function p1Score() {
 function cpuScore() {
     let oldScore = parseInt(document.querySelector("#cpuscore").innerText);
     document.querySelector("#cpuscore").innerText = ++oldScore;
+    cpu.score = oldScore++;
 }
 
 
@@ -125,19 +139,17 @@ function reset() {
     document.querySelector("#cpuscore").innerText = "0";
 }
 
-/**
- * Number of games played
- */
 
-
-    let ps = parseInt(document.querySelector("#p1score").innerText);
-    let cs = parseInt(document.querySelector("#cpuscore").innerText);
-    let select = document.querySelector("#playto");
-
+/*
     select.addEventListener('change', function () {
-        alert(this.value);
+         limit = parseInt(this.value);
+
     });
 
+    if(ps === limit || cs === limit){
+        alert("limit reached");
+    }
+*/
 
 // Get the modal
 let modal = document.getElementById("myModal");
