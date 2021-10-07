@@ -120,12 +120,15 @@ let limit = 3;
 
 select.addEventListener('change', function () {
     limit = parseInt(this.value);
+    reset()
 
 });
 
 function check() {
-    if (p1.score === limit || cpu.score === limit) {
-        alert("limit reached");
+    if (p1.score === limit) {
+        alert("Well Done you win!");
+    } else if (cpu.score === limit) {
+        alert("You lose! Better luck next time.");
     }
 }
 
