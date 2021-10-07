@@ -173,6 +173,10 @@ function reset() {
     document.querySelector("#cpuscore").innerText = "0";
     p1.score = 0;
     cpu.score = 0;
+    document.querySelector("p").classList.remove("loser", "winner");
+    document.querySelectorAll("p")[1].classList.remove("loser", "winner");
+    document.querySelector("#cpuscore").classList.remove("loser", "winner");
+    document.querySelector("#p1score").classList.remove("loser", "winner");
 }
 
 // Get the modal
