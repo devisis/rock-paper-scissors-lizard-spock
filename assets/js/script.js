@@ -2,16 +2,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.querySelectorAll("button");
     for (let button of buttons) {
-      button.addEventListener("click", function () {
-        if (this.getAttribute("data-type") === "reset") {
-          reset();
-        } else {
-          let selection = this.getAttribute("data-type");
-          calcWinner(selection);
-        }
-      });
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "reset") {
+                reset();
+            } else {
+                let selection = this.getAttribute("data-type");
+                calcWinner(selection);
+            }
+        });
     }
-  });
+});
 
 /**
  * Main game loop
@@ -126,37 +126,41 @@ function reset() {
 }
 
 /**
- * 
+ * Number of games played
  */
 
-const winSelector = document.querySelector("#playto");
-let winningScore = 3;
-let isGameOver = false;
 
-function updateScores() {};
+    let ps = parseInt(document.querySelector("#p1score").innerText);
+    let cs = parseInt(document.querySelector("#cpuscore").innerText);
+    let limit = document.querySelector("#playto");
+
+    limit.addEventListener('change', function () {
+        alert("changed");
+    });
+
 
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("instructions");
+let btn = document.getElementById("instructions");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+btn.onclick = function () {
+    modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
