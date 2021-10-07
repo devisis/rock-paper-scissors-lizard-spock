@@ -1,11 +1,10 @@
 /* jshint esversion:8 */
 
-/**
- * When content loads sort buttons by data-type
- * if data type is reset the reset funtion runs
- * if data type is one of the game buttons then the calcWinner function runs
+/*
+ When content loads sort buttons by data-type
+ if data type is reset the reset funtion runs
+ if data type is one of the game buttons then the calcWinner function runs
  */
-
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.querySelectorAll("button");
     for (let button of buttons) {
@@ -108,6 +107,7 @@ function calcCPU() {
 /**
  * Number of games played
  */
+
 let p1 = {
     score: 0
 };
@@ -121,14 +121,25 @@ let limit = 3;
 select.addEventListener('change', function () {
     limit = parseInt(this.value);
     reset()
-
 });
+
+/**
+ * Checks whether a player has won or lost yet
+ */
 
 function check() {
     if (p1.score === limit) {
-        alert("Well Done you win!");
+        feedback.innerText = "Well done, you win!";
+        document.querySelector("p").classList.add("winner");
+        document.querySelectorAll("p")[1].classList.add("loser");
+        document.querySelector("#p1score").classList.add("winner");
+        document.querySelector("#cpuscore").classList.add("loser");
     } else if (cpu.score === limit) {
-        alert("You lose! Better luck next time.");
+       feedback.innerText = "You lose! Better luck next time.";
+       document.querySelector("p").classList.add("loser");
+       document.querySelectorAll("p")[1].classList.add("winner");
+       document.querySelector("#cpuscore").classList.add("winner");
+       document.querySelector("#p1score").classList.add("loser");
     }
 }
 
@@ -154,13 +165,14 @@ function cpuScore() {
     check();
 }
 
-
 /**
  * Resets the scores
  */
 function reset() {
     document.querySelector("#p1score").innerText = "0";
     document.querySelector("#cpuscore").innerText = "0";
+    p1.score = 0;
+    cpu.score = 0;
 }
 
 // Get the modal
