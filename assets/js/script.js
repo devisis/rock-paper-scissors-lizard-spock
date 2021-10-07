@@ -171,6 +171,7 @@ function cpuScore() {
 function reset() {
     document.querySelector("#p1score").innerText = "0";
     document.querySelector("#cpuscore").innerText = "0";
+    feedback.innerText = "click an option to play!";
     p1.score = 0;
     cpu.score = 0;
     document.querySelector("p").classList.remove("loser", "winner");
