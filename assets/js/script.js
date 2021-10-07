@@ -1,7 +1,9 @@
 /* jshint esversion:8 */
 
 /**
- * 
+ * When content loads sort buttons by data-type
+ * if data type is reset the reset funtion runs
+ * if data type is one of the game buttons then the calcWinner function runs
  */
 
 document.addEventListener("DOMContentLoaded", function () {
