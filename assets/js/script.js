@@ -132,9 +132,9 @@ function reset() {
 
     let ps = parseInt(document.querySelector("#p1score").innerText);
     let cs = parseInt(document.querySelector("#cpuscore").innerText);
-    let limit = document.querySelector("#playto");
+    let select = document.querySelector("#playto");
 
-    limit.addEventListener('change', function () {
+    select.addEventListener('change', function () {
         alert(this.value);
     });
 
