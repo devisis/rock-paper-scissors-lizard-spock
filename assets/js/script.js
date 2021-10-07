@@ -1,4 +1,9 @@
 /* jshint esversion:8 */
+
+/**
+ * 
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.querySelectorAll("button");
     for (let button of buttons) {
@@ -110,6 +115,18 @@ let cpu = {
 
 let select = document.querySelector("#playto");
 let limit = 3;
+
+select.addEventListener('change', function () {
+    limit = parseInt(this.value);
+
+});
+
+function check() {
+    if (p1.score === limit || cpu.score === limit) {
+        alert("limit reached");
+    }
+}
+
 /**
  * Increment payer score by 1
  */
@@ -118,6 +135,7 @@ function p1Score() {
     let oldScore = parseInt(document.querySelector("#p1score").innerText);
     document.querySelector("#p1score").innerText = ++oldScore;
     p1.score = oldScore++;
+    check();
 }
 
 /**
@@ -128,6 +146,7 @@ function cpuScore() {
     let oldScore = parseInt(document.querySelector("#cpuscore").innerText);
     document.querySelector("#cpuscore").innerText = ++oldScore;
     cpu.score = oldScore++;
+    check();
 }
 
 
@@ -138,18 +157,6 @@ function reset() {
     document.querySelector("#p1score").innerText = "0";
     document.querySelector("#cpuscore").innerText = "0";
 }
-
-
-/*
-    select.addEventListener('change', function () {
-         limit = parseInt(this.value);
-
-    });
-
-    if(ps === limit || cs === limit){
-        alert("limit reached");
-    }
-*/
 
 // Get the modal
 let modal = document.getElementById("myModal");
