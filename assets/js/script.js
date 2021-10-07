@@ -38,10 +38,10 @@ function calcWinner(p1) {
         //Rock beats scissors & lizard
         if (p1 === "rock") {
             if (cpu === "scissors" || cpu === "lizard") {
-                feedback.innerText = `${p1} beats ${cpu} - you win!`;
+                feedback.innerText = `${p1} beats ${cpu} - you win round!`;
                 p1Score();
             } else {
-                feedback.innerText = `${p1} loses to ${cpu} - cpu wins!`;
+                feedback.innerText = `${p1} loses to ${cpu} - cpu wins round!`;
                 cpuScore();
             }
         }
@@ -49,10 +49,10 @@ function calcWinner(p1) {
         //Paper beats rock & spock
         else if (p1 === "paper") {
             if (cpu === "rock" || cpu === "spock") {
-                feedback.innerText = `${p1} beats ${cpu} - you win!`;
+                feedback.innerText = `${p1} beats ${cpu} - you win round!`;
                 p1Score();
             } else {
-                feedback.innerText = `${p1} loses to ${cpu} - cpu wins!`;
+                feedback.innerText = `${p1} loses to ${cpu} - cpu wins round!`;
                 cpuScore();
             }
         }
@@ -60,10 +60,10 @@ function calcWinner(p1) {
         //Scissors beats paper & lizard
         else if (p1 === "scissors") {
             if (cpu === "paper" || cpu === "lizard") {
-                feedback.innerText = `${p1} beats ${cpu} - you win!`;
+                feedback.innerText = `${p1} beats ${cpu} - you win round!`;
                 p1Score();
             } else {
-                feedback.innerText = `${p1} loses to ${cpu} - cpu wins!`;
+                feedback.innerText = `${p1} loses to ${cpu} - cpu wins round!`;
                 cpuScore();
             }
         }
@@ -71,20 +71,20 @@ function calcWinner(p1) {
         // Lizard beats paper & spock
         else if (p1 === "lizard") {
             if (cpu === "paper" || cpu === "spock") {
-                feedback.innerText = `${p1} beats ${cpu} - you win!`;
+                feedback.innerText = `${p1} beats ${cpu} - you win round!`;
                 p1Score();
             } else {
-                feedback.innerText = `${p1} loses to ${cpu} - cpu wins!`;
+                feedback.innerText = `${p1} loses to ${cpu} - cpu wins round!`;
                 cpuScore();
             }
         }
         //Spock beats scissors $ rock
         else if (p1 === "spock") {
             if (cpu === "scissors" || cpu === "rock") {
-                feedback.innerText = `${p1} beats ${cpu} - you win!`;
+                feedback.innerText = `${p1} beats ${cpu} - you win round!`;
                 p1Score();
             } else {
-                feedback.innerText = `${p1} loses to ${cpu} - cpu wins!`;
+                feedback.innerText = `${p1} loses to ${cpu} - cpu wins round!`;
                 cpuScore();
             }
         }
@@ -129,13 +129,13 @@ select.addEventListener('change', function () {
 
 function check() {
     if (p1.score === limit) {
-        feedback.innerText = "Well done, you win!";
+        feedback.innerText = "Well done, you've won!";
         document.querySelector("p").classList.add("winner");
         document.querySelectorAll("p")[1].classList.add("loser");
         document.querySelector("#p1score").classList.add("winner");
         document.querySelector("#cpuscore").classList.add("loser");
     } else if (cpu.score === limit) {
-       feedback.innerText = "You lose! Better luck next time.";
+       feedback.innerText = "You lost! Better luck next time.";
        document.querySelector("p").classList.add("loser");
        document.querySelectorAll("p")[1].classList.add("winner");
        document.querySelector("#cpuscore").classList.add("winner");
