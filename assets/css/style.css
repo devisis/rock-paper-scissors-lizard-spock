@@ -121,6 +121,15 @@ button:hover {
     color: #ffa260;
 }
 
+/* Winner and Loser Styling */
+
+.winner {
+    color: lawngreen;
+}
+
+.loser {
+    color:  red;
+}
 /* The Modal (background) */
 .modal {
     display: none;
