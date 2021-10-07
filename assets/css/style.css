@@ -7,7 +7,7 @@ body {
     text-align: center;
     background-color: black;
     margin: 0;
-}
+ }
 
 header {
     margin: 0 auto;
@@ -70,6 +70,10 @@ button:hover {
     border: 3px solid #ffa260;
 }
 
+#instructions{
+    color: #000;
+    background-color: #ffa260;
+}
 
 /* Game Layout */
 
