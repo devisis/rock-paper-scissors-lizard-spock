@@ -135,7 +135,7 @@ function reset() {
     let limit = document.querySelector("#playto");
 
     limit.addEventListener('change', function () {
-        alert("changed");
+        alert(this.value);
     });
 
 
