@@ -125,6 +125,9 @@ select.addEventListener('change', function () {
 
 /**
  * Checks whether a player has won or lost yet
+ * Adds winner class if won
+ * Adds loser class if lost
+ * Disables relevant buttons when game is over
  */
 
 function check() {
