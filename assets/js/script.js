@@ -131,7 +131,6 @@ select.addEventListener('change', function () {
  */
 
 function check() {
-
     if (p1.score === limit) {
         feedback.innerText = "Well done, you've won!";
         feedback.classList.add("winner");
@@ -139,8 +138,7 @@ function check() {
         document.querySelectorAll("p")[1].classList.add("loser");
         document.querySelector("#p1score").classList.add("winner");
         document.querySelector("#cpuscore").classList.add("loser");
-        document.querySelectorAll(".btn").disabled = true;
-
+        disButton(true);
     } else if (cpu.score === limit) {
         feedback.innerText = "You lost! Better luck next time.";
         feedback.classList.add("loser");
@@ -148,7 +146,18 @@ function check() {
         document.querySelectorAll("p")[1].classList.add("winner");
         document.querySelector("#cpuscore").classList.add("winner");
         document.querySelector("#p1score").classList.add("loser");
-        document.querySelectorAll(".btn").disabled = true;
+        disButton(true);
+    }
+}
+
+/**
+ * Disables buttons
+ */
+
+function disButton(bool) {
+    let btn = document.querySelectorAll(".btn");
+    for (let b in btn) {
+        btn[b].disabled = bool;
     }
 }
 
@@ -188,7 +197,7 @@ function reset() {
     document.querySelectorAll("p")[1].classList.remove("loser", "winner");
     document.querySelector("#cpuscore").classList.remove("loser", "winner");
     document.querySelector("#p1score").classList.remove("loser", "winner");
-    document.querySelectorAll(".btn").disabled = false;
+    disButton(false);
 }
 
 // Get the modal
