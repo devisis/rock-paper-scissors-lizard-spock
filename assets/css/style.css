@@ -15,11 +15,6 @@ body {
     text-shadow: 1px 1px black;
 }
 
-header {
-    margin: 0 auto;
-    padding: 0.3rem;
-}
-
 a {
     color: #fca311;
     text-decoration: none;
