@@ -131,19 +131,21 @@ function check() {
 
     if (p1.score === limit) {
         feedback.innerText = "Well done, you've won!";
+        feedback.classList.add("winner");
         document.querySelector("p").classList.add("winner");
         document.querySelectorAll("p")[1].classList.add("loser");
         document.querySelector("#p1score").classList.add("winner");
         document.querySelector("#cpuscore").classList.add("loser");
         document.querySelectorAll(".btn").disabled = true;
-        
+
     } else if (cpu.score === limit) {
-       feedback.innerText = "You lost! Better luck next time.";
-       document.querySelector("p").classList.add("loser");
-       document.querySelectorAll("p")[1].classList.add("winner");
-       document.querySelector("#cpuscore").classList.add("winner");
-       document.querySelector("#p1score").classList.add("loser");
-       document.querySelectorAll(".btn").disabled = true;
+        feedback.innerText = "You lost! Better luck next time.";
+        feedback.classList.add("loser");
+        document.querySelector("p").classList.add("loser");
+        document.querySelectorAll("p")[1].classList.add("winner");
+        document.querySelector("#cpuscore").classList.add("winner");
+        document.querySelector("#p1score").classList.add("loser");
+        document.querySelectorAll(".btn").disabled = true;
     }
 }
 
@@ -176,6 +178,7 @@ function reset() {
     document.querySelector("#p1score").innerText = "0";
     document.querySelector("#cpuscore").innerText = "0";
     feedback.innerText = "click an option to play!";
+    feedback.classList.remove("loser", "winner");
     p1.score = 0;
     cpu.score = 0;
     document.querySelector("p").classList.remove("loser", "winner");
