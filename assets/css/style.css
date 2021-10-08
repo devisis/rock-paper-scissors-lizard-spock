@@ -83,7 +83,7 @@ button:hover {
 
 .game-area {
     padding: 1%;
-    background-color:black;
+    background-image: linear-gradient(to bottom, #14213d, black);
     min-height: fit-content;
     width: 75%;
     margin: 2% auto;
