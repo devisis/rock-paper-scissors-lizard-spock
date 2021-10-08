@@ -2,11 +2,9 @@
 * {
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    
 }
 
 body {
-
     text-align: center;
     background-color: black;
     margin: 0;
@@ -54,7 +52,7 @@ button {
     border-radius: 10%;
     padding: 1em 2em;
     font-size: 1em;
-    margin: 3%;
+    margin: 5px 3%;
     transition: all 0.2em;
     background-image: linear-gradient(to bottom,#1f315af0, #14213d);
     text-shadow: 1px 1px black;
