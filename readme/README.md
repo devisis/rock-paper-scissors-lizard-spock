@@ -79,8 +79,11 @@ Alternatively, if you are using Gitpod, you can use this link:
 
 ### Media
 
-- fontawesome
+- google fonts
 - https://www.pngwing.com/
+- https://unsplash.com/
+- https://fontawesome.com/
 
 ### Acknowledgements
 - Rules gathered from https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/
+- Model help found on https://w3schools.com/ 
