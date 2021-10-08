@@ -47,7 +47,6 @@ ul {
 /* Button Styling */
 
 button {
-    background-color: #1f315af0;
     color: #ffa260;
     border: 2px groove;
     border-radius: 10%;
@@ -55,6 +54,7 @@ button {
     font-size: 1em;
     margin: 3%;
     transition: all 0.2em;
+    background-image: linear-gradient(to bottom,#1f315af0, #14213d);
 }
 
 p button {
@@ -70,14 +70,13 @@ button:hover {
 }
 
 .reset {
-    background-color: black;
+    background-image: linear-gradient(to bottom, #ffa260, #ed2127);
     color: white;
-    border: 3px solid #ffa260;
 }
 
 #instructions{
     color: #000;
-    background-color: #ffa260;
+    background-image: linear-gradient(to bottom,#ffa260, #e9624a);
 }
 
 /* Game Layout */
@@ -99,7 +98,7 @@ button:hover {
 }
 
 .scores {
-    background-color: #1f315af0;
+    background-image:linear-gradient( to right, #1f315af0, #1f2a44f0);
     padding: 1rem;
     border: 2px;
     border-style: double none;
