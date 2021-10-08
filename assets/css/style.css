@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     text-shadow: 1px 1px black;
- }
+}
 
 header {
     margin: 0 auto;
@@ -54,7 +54,7 @@ button {
     font-size: 1em;
     margin: 5px 3%;
     transition: all 0.2em;
-    background-image: linear-gradient(to bottom,#1f315af0, #14213d);
+    background-image: linear-gradient(to bottom, #1f315af0, #14213d);
     text-shadow: 1px 1px black;
 }
 
@@ -69,7 +69,8 @@ button:hover {
     cursor: pointer;
 }
 
-.reset, #instructions {
+.reset,
+#instructions {
     background-image: linear-gradient(to bottom, #ffa260, #ed2127);
     color: white;
 }
@@ -93,7 +94,7 @@ button:hover {
 }
 
 .scores {
-    background-image:linear-gradient( to right, #1f315af0, #1f2a44f0);
+    background-image: linear-gradient(to right, #1f315af0, #1f2a44f0);
     padding: 1rem;
     border: 2px;
     border-style: double none;
@@ -127,8 +128,9 @@ button:hover {
 }
 
 .loser {
-    color:  red;
+    color: red;
 }
+
 /* The Modal (background) */
 .modal {
     display: none;
