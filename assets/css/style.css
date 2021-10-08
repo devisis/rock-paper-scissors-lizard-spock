@@ -7,6 +7,10 @@ body {
     text-align: center;
     background-color: black;
     margin: 0;
+    background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
  }
 
 header {
@@ -79,13 +83,13 @@ button:hover {
 
 .game-area {
     padding: 1%;
-    background-color: #14213d;
+    background-color:black;
     min-height: fit-content;
     width: 75%;
     margin: 2% auto;
-    border: 2.5px;
-    border-style: groove;
+    border: 2.5px solid orange;
     border-radius: 1%;
+    box-shadow: 0 0em 1em #ffa260;
 }
 
 .score-section {
