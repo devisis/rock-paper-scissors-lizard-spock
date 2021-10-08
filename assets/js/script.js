@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 let selection = this.getAttribute("data-type");
                 calcWinner(selection);
+                console.log(selection);
             }
         });
     }
@@ -29,8 +30,8 @@ function calcWinner(p1) {
     let cpu = calcCPU();
 
     //Change fontaswesome
-    document.querySelector("i").className = `btn btn--${p1}`;
-    document.querySelectorAll("i")[1].className = `btn btn--${cpu}`;
+    document.querySelector("i").className = `fas fa-hand-${p1}`;
+    document.querySelectorAll("i")[1].className = `fas fa-hand-${cpu}`;
 
     //Continues if game not a draw
     if (p1 !== cpu) {
