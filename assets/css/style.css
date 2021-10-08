@@ -71,14 +71,9 @@ button:hover {
     cursor: pointer;
 }
 
-.reset {
+.reset, #instructions {
     background-image: linear-gradient(to bottom, #ffa260, #ed2127);
     color: white;
-}
-
-#instructions{
-    color: #000;
-    background-image: linear-gradient(to bottom,#ffa260, #e9624a);
 }
 
 /* Game Layout */
