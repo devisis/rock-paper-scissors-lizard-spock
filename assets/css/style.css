@@ -55,6 +55,7 @@ button {
     margin: 3%;
     transition: all 0.2em;
     background-image: linear-gradient(to bottom,#1f315af0, #14213d);
+    text-shadow: 1px 1px black;
 }
 
 p button {
@@ -62,7 +63,6 @@ p button {
 }
 
 button:hover {
-    border-color: #ffa260;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
     transform: translateY(-0.25em);
