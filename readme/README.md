@@ -31,7 +31,7 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 - I chose a Google font that I felt wasnt too professional and went along with the fun attention grasping theme I had in mind. The text is clear and easy to read and gives the buttons a smooth look.
 
-font-awesome - used the icons from font awesome for the rock, paper, scissors, lizard, and spock options as they were easy to identify.
+- font-awesome - used the icons from font awesome for the rock, paper, scissors, lizard, and spock options as they were easy to identify.
 
 ### Wireframe
 
