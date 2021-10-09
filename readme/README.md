@@ -63,7 +63,8 @@ font-awesome - used the icons from font awesome for the rock, paper, scissors, l
 
 ## Testing 
 
-All the buttons were working correctly. I tested this by by clicking on each one and making sure the right text popped up for each option.
+All the buttons were working correctly. I tested this by by clicking on each one and making sure the right text popped up for each option. When testing the reset button all scores we're reset and game buttons rendered unclickable until game was restarted.
+
 
 
 ### Code Validation
@@ -78,6 +79,8 @@ I have tested the site on:
 ### Responsiveness
 
 Using the developer tools on Google Chrome I tested my website's dimentions on iPhone 5/SE, iPhone X, iPad and the Pixel 2 on both landscape and portrait modes. 
+
+On the iPhone 5/SE the site was not correctly scaled as seen [here](/workspace/rock-paper-scissors-lizard-spock/documentation/testing/responsiveness-error.png). I noted and fixed this issue by changing the css. The result can be seen [here](/workspace/rock-paper-scissors-lizard-spock/documentation/testing/responsiveness-fix.png).
 
 ### Testing User Stories
 
