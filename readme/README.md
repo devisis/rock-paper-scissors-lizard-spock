@@ -59,7 +59,8 @@ font-awesome - used the icons from font awesome for the rock, paper, scissors, l
  - JS
  - Gitpod
  - GitHub
- - invision
+ - [invision](https://www.invisionapp.com/) To create wireframes.
+ - [W3Schools](https://www.w3schools.com/) for help with the model.
 
 ## Testing 
 
