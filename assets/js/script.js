@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
  * Main game loop
  * Calculates the winner of each scenario
  */
+let feedback = document.querySelector("#feedback");
 
 function calcWinner(p1) {
-    let feedback = document.querySelector("#feedback");
     let cpu = calcCPU();
 
     //Change fontaswesome
