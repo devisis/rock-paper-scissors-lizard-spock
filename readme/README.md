@@ -35,7 +35,7 @@ font-awesome - used the icons from font awesome for the rock, paper, scissors, l
 
 ### Wireframe
 
-[Desktop and Mobile View](https://i.imgur.com/vY4LbPr.png)
+[Desktop and Mobile View](/workspace/rock-paper-scissors-lizard-spock/documentation/wireframes/rpsls-wireframe.png)
 
 ## Features 
 
@@ -71,9 +71,9 @@ All the buttons were working correctly. I tested this by by clicking on each one
 ### Browser Compatibility
 
 I have tested the site on:
-- [Microsoft Edge]() 
-- [Google Chrome]() 
-- [Firefox]()
+- [Microsoft Edge](/workspace/rock-paper-scissors-lizard-spock/documentation/compatability/edge-compatability.jpg) 
+- [Google Chrome](/workspace/rock-paper-scissors-lizard-spock/documentation/compatability/chrome-compatability.png) 
+- [Firefox](/workspace/rock-paper-scissors-lizard-spock/documentation/compatability/firefox-compatability.jpg)
 
 ### Responsiveness
 
