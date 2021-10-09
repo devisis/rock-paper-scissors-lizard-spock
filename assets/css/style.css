@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     text-shadow: 1px 1px black;
+    overflow: hidden;
 }
 
 a {
@@ -117,10 +118,29 @@ button:hover {
     color: #ffa260;
 }
 
-/* Game Layout Media Queries*/
-@media only screen and (min-width :300px) {
+/* Game Layout Media Queries */
+@media only mobile and (min-width :375px) {
+    body {
+        height: fit-content;
+    }
+
+    p {
+        font-size: 15em;
+
+    }
+
+    .game-area {
+        height: 80vh;
+    }
+
+    button {
+        margin: 0.75em 3%;
+
+    }
+
 
 }
+
 /* Winner and Loser Styling */
 
 .winner {
