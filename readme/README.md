@@ -64,7 +64,16 @@ font-awesome - used the icons from font awesome for the rock, paper, scissors, l
 
 ## Testing 
 
-All the buttons were working correctly. I tested this by by clicking on each one and making sure the right text popped up for each option. When testing the reset button all scores we're reset and game buttons rendered unclickable until game was restarted.
+- HTML validator
+- CSS validator
+- JsHint
+
+### Buttons 
+
+- Game buttons fully operational.
+- Reset button fully operational. 
+- Help button fully operational. 
+- Buttons disabled after game win/loss.
 
 
 
@@ -117,5 +126,6 @@ Alternatively, if you are using Gitpod, you can use this link:
 - [fontawesome](https://fontawesome.com/)
 
 ### Acknowledgements
+- Thank you to my mentor for help and support.
 - Rules gathered from https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/
 - Model help found on https://w3schools.com/ 
