@@ -108,9 +108,9 @@ Alternatively, if you are using Gitpod, you can use this link:
 ### Media
 
 - google fonts
-- https://www.pngwing.com/
-- https://unsplash.com/
-- https://fontawesome.com/
+- [pngwing](https://www.pngwing.com/)
+- [unsplash](https://unsplash.com/)
+- [fontawesome](https://fontawesome.com/)
 
 ### Acknowledgements
 - Rules gathered from https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/
