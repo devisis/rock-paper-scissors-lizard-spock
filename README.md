@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock
 
-![Am I responsive](/workspace/rock-paper-scissors-lizard-spock/documentation/testing/am-i-responsive-rpsls.png)
+![Am I responsive](documentation/testing/am-i-responsive-rpsls.png)
 
 ## Introduction
 
@@ -39,7 +39,7 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ### Wireframe
 
-[Desktop and Mobile View](/workspace/rock-paper-scissors-lizard-spock/documentation/wireframes/rpsls-wireframe.png)
+![Desktop and Mobile View](documentation/wireframes/rpsls-wireframe.png)
 
 ## Features 
 
@@ -86,9 +86,9 @@ With the colour scheme I picked two colours that I felt complimented each other 
 ### Browser Compatibility
 
 I have tested the site on:
-- [Microsoft Edge](/workspace/rock-paper-scissors-lizard-spock/documentation/compatability/edge-compatability.jpg) 
-- [Google Chrome](/workspace/rock-paper-scissors-lizard-spock/documentation/compatability/chrome-compatability.png) 
-- [Firefox](/workspace/rock-paper-scissors-lizard-spock/documentation/compatability/firefox-compatability.jpg)
+- [Microsoft Edge](documentation/compatability/edge-compatability.jpg) 
+- [Google Chrome](documentation/compatability/chrome-compatability.png) 
+- [Firefox](documentation/compatability/firefox-compatability.jpg)
 
 ### Responsiveness
 
