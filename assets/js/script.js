@@ -198,6 +198,8 @@ function reset() {
     document.querySelector("#cpuscore").classList.remove("loser", "winner");
     document.querySelector("#p1score").classList.remove("loser", "winner");
     disButton(false);
+    document.querySelector("i").className = `fas fa-ghost`;
+    document.querySelectorAll("i")[1].className = `fas fa-ghost`;
 }
 
 // Get the modal
