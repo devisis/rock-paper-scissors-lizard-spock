@@ -5,7 +5,6 @@
 }
 
 body {
-    height: 100%;
     text-align: center;
     background-color: black;
     background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
@@ -13,7 +12,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     text-shadow: 1px 1px black;
-    overflow: hidden;
 }
 
 a {
@@ -76,12 +74,12 @@ button:hover {
 .game-area {
     padding: 1%;
     background-image: linear-gradient(to bottom, #14213d, black);
-    position: initial;
     width: 75%;
     margin: 2% auto;
     border: 2.5px solid orange;
     border-radius: 1%;
     box-shadow: 0 0em 1em #ffa260;
+    min-height: 75vh;
 }
 
 .score-section {
@@ -91,7 +89,7 @@ button:hover {
 
 .scores {
     background-image: linear-gradient(to right, #1f315af0, #1f2a44f0);
-    padding: 1em;
+    padding: 1.5em;
     border: 2px;
     border-style: double none;
     display: flex;
@@ -119,27 +117,22 @@ button:hover {
 }
 
 /* Game Layout Media Queries */
-@media only mobile and (min-width :375px) {
+@media (min-width :375px) {
     body {
-        height: fit-content;
+        min-height: 90vh;
     }
 
-    p {
-        font-size: 15em;
-
+    .score-section {
+        padding: 1em;
     }
-
-    .game-area {
-        height: 80vh;
-    }
-
-    button {
-        margin: 0.75em 3%;
-
-    }
-
 
 }
+
+button {
+    margin: 0.75em 3%;
+
+}
+
 
 /* Winner and Loser Styling */
 
