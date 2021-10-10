@@ -45,11 +45,11 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ### Existing Features
 
-- Ability to select number of games.
-- Able to reset game.
-- Able to select from a range of choices which affect the game.
-- Ability to find out the rules.
-- Ability to see what choices you and the computer pick.
+- ![Ability to select number of games.](documentation/features/first-to.png)
+- ![Able to reset game.](documentation/features/reset.gif)
+- ![Able to select from a range of choices which affect the game.](documentation/features/button-selection.png)
+- ![Ability to find out the rules.](documentation/features/rules.png)
+- ![Ability to see what choices you and the computer pick.](documentation/features/score-section.png)
 
 
 ### Features Left to Implement
