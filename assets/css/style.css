@@ -45,7 +45,6 @@ button {
     border: 2px groove;
     border-radius: 10%;
     padding: 0.5em 0.75em;
-    font-size: 1em;
     margin: 0.3em 3%;
     transition: all 0.2s;
     background-image: linear-gradient(to bottom, #1f315af0, #14213d);
@@ -72,7 +71,7 @@ button:hover {
 /* Game Layout */
 
 .game-area {
-    padding: 1%;
+    padding: 1em 1%;
     background-image: linear-gradient(to bottom, #14213d, black);
     width: 75%;
     margin: 2% auto;
@@ -89,7 +88,7 @@ button:hover {
 
 .scores {
     background-image: linear-gradient(to right, #1f315af0, #1f2a44f0);
-    padding: 1.5em;
+    padding: 1em;
     border: 2px;
     border-style: double none;
     display: flex;
@@ -118,19 +117,53 @@ button:hover {
 
 /* Game Layout Media Queries */
 @media (min-width :375px) {
+
     body {
         min-height: 90vh;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 
     .score-section {
         padding: 1em;
     }
 
+    .game-area {
+        padding: 1%;
+    }
+
+    button {
+        margin: 0.75em 3%;
+        font-size: 1em;
+    }
+
 }
 
-button {
-    margin: 0.75em 3%;
+@media (min-width: 1000px) {
 
+    p {
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 1.3em;
+    }
+}
+
+@media  (min-device-width: 1000px) {
+
+    section{
+        margin: 1%;
+    }
+    p {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.4em;
+    }
 }
 
 
