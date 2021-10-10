@@ -1,5 +1,9 @@
 # Rock Paper Scissors Lizard Spock
 
+![Am I responsive](/workspace/rock-paper-scissors-lizard-spock/documentation/testing/am-i-responsive-rpsls.png)
+
+## Introduction
+
 The first known mention of the game of Rock Paper Scissors was in the book 'Wuzazu'. The game dates back to the time of the Chinese Han dynasty (206 BC – 220 AD). From then til now it has been adapted in different ways. This is one of those fun adaptations. My work will target those who aim to play a quick game with the element of chance and fans of the rock paper scissors lizard spock adaptation.
 
 ## UX
