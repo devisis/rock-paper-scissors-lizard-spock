@@ -65,8 +65,8 @@ function calcWinner(p1) {
             p1Score();
 
         } else {
-            feedback.innerText = "Round lost!"
-            cpuScore()
+            feedback.innerText = "Round lost!";
+            cpuScore();
         }
     }
 }
@@ -175,16 +175,15 @@ function modalOpen() {
         modal.style.display = "block";
     }
     // When the user clicks on <span> (x), close the modal
-    if (modal.style.display = "block") {
-        close.addEventListener("click", function () {
-            modal.style.display = "none"
-        });
+    close.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.addEventListener("click", function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        });
-    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.addEventListener("click", function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+
 }
