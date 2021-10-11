@@ -49,21 +49,31 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ![Ability to select number of games.](documentation/features/first-to.png)
 
+The user has the option of selecting the amount of games they want to play upto by cicking on the down arrow and selecting one of the number options from the dropdown. Once this condition is met the game will end and a winner will be announced.
+
 ### Reset game
 
 ![Able to reset game.](documentation/features/reset.gif)
+
+The reset button when clicked sets the game back to its default state with the scores at zero and the icons set to ghost.
 
 ### Select from a range of choices which affect the game
 
 ![Able to select from a range of choices which affect the game.](documentation/features/button-selection.png)
 
+There are many buttons to choose from all affecting the game in different ways. The main game buttons rock paper scissors lizard and spock affect the scores while the reset brings the game back to default and the help presents the rules.
+
 ### Rules
 
 ![Ability to find out the rules.](documentation/features/rules.png)
 
+Helps the user figure out how to win by displaying the rules of the game in a modal when the Help button is clicked.
+
 ### Display of pick choices
 
 ![Ability to see what choices you and the computer pick.](documentation/features/score-section.png)
+
+This display shows the scores of CPU and the player as well as what options they pick.
 
 ### Features Left to Implement
 
@@ -71,12 +81,12 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ## Technologies Used
 
- - HTML used for the markup text
- - CSS used for style
- - JS
- - GIT version control and commit messages
- - Gitpod 
- - GitHub used for the IDE
+ - HTML used for the markup text.
+ - CSS used for style.
+ - JS used for website functionality.
+ - GIT version control and commit messages.
+ - Gitpod used for writing up the code.
+ - GitHub used for the IDE.
  - [invision](https://www.invisionapp.com/) To create wireframes.
 
 
