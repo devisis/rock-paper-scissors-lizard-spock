@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("data-type") === "help") {
                 modalOpen();
             } else {
-                let selection = this.getAttribute("data-type");
-                calcWinner(selection);
+                let p1 = this.getAttribute("data-type");
+                calcWinner(p1);
             }
         });
     }
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * Calculates the winner of each scenario
  */
 let feedback = document.querySelector("#feedback");
-
+/*
 function calcWinner(p1) {
     let cpu = calcCPU();
 
@@ -94,8 +94,50 @@ function calcWinner(p1) {
         feedback.innerText = `round is a draw!`;
     }
 
-}
+} */
 
+function calcWinner(p1) {
+    let cpu = calcCPU();
+
+    //Change fontaswesome
+    document.getElementById("player-hand").className = `fas fa-hand-${p1}`;
+    document.getElementById("cpu-hand").className = `fas fa-hand-${cpu}`;
+
+    //Continues if game not a draw
+    if (p1 === cpu) {
+        feedback.innerText = "Round drawn!";
+    } else {
+        //Rock beats scissors & lizard
+        if (p1 === "rock" && (cpu === "scissors" || cpu === "lizard")) {
+            feedback.innerText = "Round won!";
+            p1Score();
+        }
+        //Paper beats rock & spock
+        else if (p1 === "paper" && (cpu === "rock" || cpu === "spock")) {
+            feedback.innerText = "Round won!";
+            p1Score();
+        }
+        //Scissors beats paper & lizard
+        else if (p1 === "scissors" && (cpu === "paper" || cpu === "lizard")) {
+            feedback.innerText = "Round won!";
+            p1Score();
+        }
+        // Lizard beats paper & spock
+        else if (p1 === "lizard" && (cpu === "paper" || cpu === "spock")) {
+            feedback.innerText = "Round won!";
+            p1Score();
+        }
+        //Spock beats scissors & rock
+        else if (p1 === "spock" && (cpu === "scissors" || cpu === "rock")) {
+            feedback.innerText = "Round won!";
+            p1Score();
+
+        } else {
+            feedback.innerText = "Round lost!"
+            cpuScore()
+        }
+    }
+}
 /** Calculates what option the CPU is going to pick */
 
 function calcCPU() {
@@ -106,10 +148,10 @@ function calcCPU() {
 
 /** Number of games played */
 
-let p1 = {
+let p1Stats = {
     score: 0
 };
-let cpu = {
+let cpuStats = {
     score: 0
 };
 
@@ -129,7 +171,7 @@ select.addEventListener('change', function () {
  */
 
 function check() {
-    if (p1.score === limit) {
+    if (p1Stats.score === limit) {
         feedback.innerText = "Well done, you've won!";
         feedback.classList.add("winner");
         document.querySelector("#p1-display").classList.add("winner");
@@ -137,7 +179,7 @@ function check() {
         document.querySelector("#p1score").classList.add("winner");
         document.querySelector("#cpuscore").classList.add("loser");
         disButton(true);
-    } else if (cpu.score === limit) {
+    } else if (cpuStats.score === limit) {
         feedback.innerText = "You lost! Better luck next time.";
         feedback.classList.add("loser");
         document.querySelector("#p1-display").classList.add("loser");
@@ -162,7 +204,7 @@ function disButton(bool) {
 function p1Score() {
     let oldScore = parseInt(document.querySelector("#p1score").innerText);
     document.querySelector("#p1score").innerText = ++oldScore;
-    p1.score = oldScore++;
+    p1Stats.score = oldScore++;
     check();
 }
 
@@ -171,7 +213,7 @@ function p1Score() {
 function cpuScore() {
     let oldScore = parseInt(document.querySelector("#cpuscore").innerText);
     document.querySelector("#cpuscore").innerText = ++oldScore;
-    cpu.score = oldScore++;
+    cpuStats.score = oldScore++;
     check();
 }
 
@@ -181,10 +223,10 @@ function reset() {
     document.querySelector("#cpuscore").innerText = "0";
     feedback.innerText = "click an option to play!";
     feedback.classList.remove("loser", "winner");
-    p1.score = 0;
-    cpu.score = 0;
-    document.querySelector("p").classList.remove("loser", "winner");
-    document.querySelectorAll("p")[1].classList.remove("loser", "winner");
+    p1Stats.score = 0;
+    cpuStats.score = 0;
+    document.querySelector("#p1-display").classList.remove("loser", "winner");
+    document.querySelector("#cpu-display").classList.remove("loser", "winner");
     document.querySelector("#cpuscore").classList.remove("loser", "winner");
     document.querySelector("#p1score").classList.remove("loser", "winner");
     disButton(false);
