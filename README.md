@@ -125,10 +125,10 @@ Alternatively, if you are using Gitpod, you can use this link:
 
 ### Media
 
-- google fonts
-- [pngwing](https://www.pngwing.com/)
-- [unsplash](https://unsplash.com/)
-- [fontawesome](https://fontawesome.com/)
+- [google fonts](https://fonts.google.com/specimen/Yanone+Kaffeesatz#standard-styles)
+- [pngwing](https://www.pngwing.com/) used for the favicon.
+- [unsplash](https://unsplash.com/) used for the arcade background image.
+- [fontawesome](https://fontawesome.com/) used for the icons.
 
 ### Acknowledgements
 - Thank you to my mentor for help and support.
