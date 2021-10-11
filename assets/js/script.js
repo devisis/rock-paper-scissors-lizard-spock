@@ -21,80 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+let feedback = document.querySelector("#feedback");
+
 /**
  * Main game loop
  * Calculates the winner of each scenario
  */
-let feedback = document.querySelector("#feedback");
-/*
-function calcWinner(p1) {
-    let cpu = calcCPU();
-
-    //Change fontaswesome
-    document.getElementById("player-hand").className = `fas fa-hand-${p1}`;
-    document.getElementById("cpu-hand").className = `fas fa-hand-${cpu}`;
-
-    //Continues if game not a draw
-    if (p1 !== cpu) {
-
-        //Rock beats scissors & lizard
-        if (p1 === "rock") {
-            if (cpu === "scissors" || cpu === "lizard") {
-                feedback.innerText = `${p1} beats ${cpu} | round won!`;
-                p1Score();
-            } else {
-                feedback.innerText = `${p1} loses to ${cpu} | round lost!`;
-                cpuScore();
-            }
-        }
-
-        //Paper beats rock & spock
-        else if (p1 === "paper") {
-            if (cpu === "rock" || cpu === "spock") {
-                feedback.innerText = `${p1} beats ${cpu} | round won!`;
-                p1Score();
-            } else {
-                feedback.innerText = `${p1} loses to ${cpu} | round lost!`;
-                cpuScore();
-            }
-        }
-
-        //Scissors beats paper & lizard
-        else if (p1 === "scissors") {
-            if (cpu === "paper" || cpu === "lizard") {
-                feedback.innerText = `${p1} beats ${cpu} | round won!`;
-                p1Score();
-            } else {
-                feedback.innerText = `${p1} loses to ${cpu} | round lost!`;
-                cpuScore();
-            }
-        }
-
-        // Lizard beats paper & spock
-        else if (p1 === "lizard") {
-            if (cpu === "paper" || cpu === "spock") {
-                feedback.innerText = `${p1} beats ${cpu} | round won!`;
-                p1Score();
-            } else {
-                feedback.innerText = `${p1} loses to ${cpu} | round lost!`;
-                cpuScore();
-            }
-        }
-        //Spock beats scissors $ rock
-        else if (p1 === "spock") {
-            if (cpu === "scissors" || cpu === "rock") {
-                feedback.innerText = `${p1} beats ${cpu} | round won!`;
-                p1Score();
-            } else {
-                feedback.innerText = `${p1} loses to ${cpu} | round lost!`;
-                cpuScore();
-            }
-        }
-    } else {
-        feedback.innerText = `round is a draw!`;
-    }
-
-} */
 
 function calcWinner(p1) {
     let cpu = calcCPU();
