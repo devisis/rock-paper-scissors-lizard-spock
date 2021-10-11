@@ -73,9 +73,8 @@ button:hover {
 /* Game Layout */
 
 .game-area {
-    padding: 1em 1%;
     background-image: linear-gradient(to bottom, #14213d, black);
-    width: 75%;
+    width: 90%;
     margin: 2% auto;
     border: 2.5px solid orange;
     border-radius: 1%;
@@ -152,24 +151,6 @@ button:hover {
         font-size: 1.3em;
     }
 }
-
-@media  (min-device-width: 1000px) {
-
-    section{
-        margin: 1%;
-    }
-    p {
-        font-size: 2em;
-        line-height: 0.1;
-    }
-
-
-
-    button {
-        font-size: 1.4em;
-    }
-}
-
 
 /* Winner and Loser Styling */
 
