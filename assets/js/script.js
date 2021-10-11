@@ -162,8 +162,8 @@ function reset() {
     document.querySelector("#cpuscore").classList.remove("loser", "winner");
     document.querySelector("#p1score").classList.remove("loser", "winner");
     disButton(false);
-    document.querySelector("i").className = `fas fa-ghost`;
-    document.querySelectorAll("i")[1].className = `fas fa-ghost`;
+    document.querySelector("#player-hand").className = `fas fa-ghost`;
+    document.querySelector("#cpu-hand").className = `fas fa-ghost`;
 }
 
 /** Model that opens when help button is clicked and closes when close or the outside window is clicked */
