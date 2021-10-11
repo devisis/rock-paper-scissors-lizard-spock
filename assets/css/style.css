@@ -7,7 +7,7 @@
 body {
     text-align: center;
     background-color: black;
-    background-image: url("assets/images/arcade.jpg");
+    background-image: url("../images/arcade.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -90,13 +90,12 @@ button:hover {
 
 .scores {
     background-image: linear-gradient(to right, #1f315af0, #1f2a44f0);
-    padding: 1em;
     border: 2px;
     border-style: double none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
