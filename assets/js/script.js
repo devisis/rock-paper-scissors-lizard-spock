@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 let feedback = document.querySelector("#feedback");
 
 /**
- * Main game loop
- * Calculates the winner of each scenario
+ ** Main game loop
+ ** Calculates the winner of each scenario
  */
 
 function calcWinner(p1) {
@@ -96,10 +96,10 @@ select.addEventListener('change', function () {
 });
 
 /**
- * Checks whether a player has won or lost yet
- * Adds winner class if won
- * Adds loser class if lost
- * Disables relevant buttons when game is over
+ ** Checks whether a player has won or lost yet
+ ** Adds winner class if won
+ ** Adds loser class if lost
+ ** Disables relevant buttons when game is over
  */
 
 function check() {
