@@ -29,8 +29,8 @@ function calcWinner(p1) {
     let cpu = calcCPU();
 
     //Change fontaswesome
-    document.querySelector("i").className = `fas fa-hand-${p1}`;
-    document.querySelectorAll("i")[1].className = `fas fa-hand-${cpu}`;
+    document.getElementById("player-hand").className = `fas fa-hand-${p1}`;
+    document.getElementById("cpu-hand").className = `fas fa-hand-${cpu}`;
 
     //Continues if game not a draw
     if (p1 !== cpu) {
@@ -63,7 +63,7 @@ function calcWinner(p1) {
                 feedback.innerText = `${p1} beats ${cpu} | round won!`;
                 p1Score();
             } else {
-                feedback.innerText = `${p1} loses to ${cpu} - | round lost!`;
+                feedback.innerText = `${p1} loses to ${cpu} | round lost!`;
                 cpuScore();
             }
         }
@@ -94,9 +94,7 @@ function calcWinner(p1) {
 
 }
 
-/**
- * Calculates what option the CPU is going to pick
- */
+/** Calculates what option the CPU is going to pick */
 
 function calcCPU() {
     let options = ["rock", "paper", "scissors", "lizard", "spock"];
@@ -104,9 +102,7 @@ function calcCPU() {
     return options[rand];
 }
 
-/**
- * Number of games played
- */
+/** Number of games played */
 
 let p1 = {
     score: 0
@@ -134,36 +130,32 @@ function check() {
     if (p1.score === limit) {
         feedback.innerText = "Well done, you've won!";
         feedback.classList.add("winner");
-        document.querySelector("p").classList.add("winner");
-        document.querySelectorAll("p")[1].classList.add("loser");
+        document.querySelector("#p1-display").classList.add("winner");
+        document.querySelector("#cpu-display").classList.add("loser");
         document.querySelector("#p1score").classList.add("winner");
         document.querySelector("#cpuscore").classList.add("loser");
         disButton(true);
     } else if (cpu.score === limit) {
         feedback.innerText = "You lost! Better luck next time.";
         feedback.classList.add("loser");
-        document.querySelector("p").classList.add("loser");
-        document.querySelectorAll("p")[1].classList.add("winner");
+        document.querySelector("#p1-display").classList.add("loser");
+        document.querySelector("#cpu-display").classList.add("winner");
         document.querySelector("#cpuscore").classList.add("winner");
         document.querySelector("#p1score").classList.add("loser");
         disButton(true);
     }
 }
 
-/**
- * Disables buttons
- */
+/** Disables buttons */
 
 function disButton(bool) {
-    let btn = document.querySelectorAll(".btn");
-    for (let b in btn) {
-        btn[b].disabled = bool;
-    }
+    let btns = document.querySelectorAll(".btn");
+    btns.forEach((btn) => {
+        btn.disabled = bool;
+    });
 }
 
-/**
- * Increment payer score by 1
- */
+/** Increment payer score by 1*/
 
 function p1Score() {
     let oldScore = parseInt(document.querySelector("#p1score").innerText);
@@ -172,9 +164,7 @@ function p1Score() {
     check();
 }
 
-/**
- * Increment CPU score by 1
- */
+/** Increment CPU score by 1*/
 
 function cpuScore() {
     let oldScore = parseInt(document.querySelector("#cpuscore").innerText);
@@ -183,9 +173,7 @@ function cpuScore() {
     check();
 }
 
-/**
- * Resets the scores
- */
+/** Resets the scores */
 function reset() {
     document.querySelector("#p1score").innerText = "0";
     document.querySelector("#cpuscore").innerText = "0";
@@ -203,13 +191,13 @@ function reset() {
 }
 
 // Get the modal
-let modal = document.getElementById("myModal");
+let modal = document.getElementById("helpModal");
 
-// Get the button that opens the modal
+// Get the button that opens the modals
 let btn = document.getElementById("instructions");
 
 // Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
+let close = document.getElementById("close");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
@@ -217,7 +205,7 @@ btn.onclick = function () {
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+close.onclick = function () {
     modal.style.display = "none";
 };
 
