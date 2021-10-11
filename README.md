@@ -69,9 +69,12 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ## Testing 
 
-- HTML validator
-- CSS validator
-- JsHint
+### HTML validator
+![HTML Validation](documentation/testing/html-checker.png)
+### CSS validator
+![CSS Validation](documentation/testing/css-checker.png)
+### JsHint
+![JS Validation](documentation/testing/js-checker.png)
 
 ### Buttons 
 
