@@ -29,7 +29,7 @@ The site goal is to provide a game to entertain online users.
 
 ### Colour Scheme
 
-With the colour scheme I picked two colours that I felt complimented each other well on coolers.co/. I also inspected the colors in my background image and selected a few that would blend in. I feel the neon orange partnered with the glow carrys forward the feeling that the user in an arcade.
+With the colour scheme I picked two colours that I felt complimented each other well on (https://coolors.co/). I also inspected the colors in my background image and selected a few that would blend in. I feel the neon orange partnered with the glow carrys forward the feeling that the user in an arcade.
 
 ### Typography
 
@@ -58,13 +58,14 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ## Technologies Used
 
- - HTML
- - CSS
+ - HTML used for the markup text
+ - CSS used for style
  - JS
- - Gitpod
- - GitHub
+ - GIT version control and commit messages
+ - Gitpod 
+ - GitHub used for the IDE
  - [invision](https://www.invisionapp.com/) To create wireframes.
- - [W3Schools](https://www.w3schools.com/) for help with the model.
+
 
 ## Testing 
 
@@ -132,4 +133,4 @@ Alternatively, if you are using Gitpod, you can use this link:
 ### Acknowledgements
 - Thank you to my mentor for help and support.
 - Rules gathered from https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/
-- Model help found on https://w3schools.com/ 
+- Modal help found on https://www.w3schools.com/howto/howto_css_modals.asp
