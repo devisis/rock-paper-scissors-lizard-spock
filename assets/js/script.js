@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "reset") {
                 reset();
+            } else if (this.getAttribute("data-type") === "help") {
+                modalOpen();
             } else {
                 let selection = this.getAttribute("data-type");
                 calcWinner(selection);
@@ -190,28 +192,24 @@ function reset() {
     document.querySelectorAll("i")[1].className = `fas fa-ghost`;
 }
 
-// Get the modal
-let modal = document.getElementById("helpModal");
-
-// Get the button that opens the modals
-let btn = document.getElementById("instructions");
-
-// Get the <span> element that closes the modal
-let close = document.getElementById("close");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-close.onclick = function () {
-    modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+function modalOpen() {
+    let modal = document.getElementById("modal");
+    let close = document.getElementById("close");
+    // display model on click if its not already showing
+    if (modal.style.display = "none") {
+        modal.style.display = "block";
     }
-};
+    // When the user clicks on <span> (x), close the modal
+    if (modal.style.display = "block") {
+        close.addEventListener("click", function () {
+            modal.style.display = "none"
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener("click", function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+}
