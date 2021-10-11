@@ -33,9 +33,9 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ### Typography
 
-- I chose a Google font called Yanone Kaffeesatz that I felt wasnt over the top and went along with the fun attention grasping arcade theme I had in mind. The text is clear and easy to read and gives the buttons a smooth look.
+- I chose a Google font called [Yanone Kaffeesatz](https://fonts.google.com/specimen/Yanone+Kaffeesatz#standard-styles) that I felt wasnt over the top and went along with the fun attention grasping arcade theme I had in mind. The text is clear and easy to read and gives the buttons a smooth look.
 
-- font-awesome - used the icons from font awesome for the rock, paper, scissors, lizard, and spock button options as they were easy to identify.
+- I used the icons from [fontawesome](https://fonts.google.com/specimen/Yanone+Kaffeesatz#standard-styles) for the rock, paper, scissors, lizard, and spock button options as they were easy to identify and looked presentable.
 
 ### Wireframe
 
@@ -49,7 +49,7 @@ With the colour scheme I picked two colours that I felt complimented each other 
 
 ![Ability to select number of games.](documentation/features/first-to.png)
 
-#### Reset game
+### Reset game
 
 ![Able to reset game.](documentation/features/reset.gif)
 
