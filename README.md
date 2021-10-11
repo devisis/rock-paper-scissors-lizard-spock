@@ -29,13 +29,13 @@ The site goal is to provide a game to entertain online users.
 
 ### Colour Scheme
 
-With the colour scheme I picked two colours that I felt complimented each other well on (https://coolors.co/). I also inspected the colors in my background image and selected a few that would blend in. I feel the neon orange partnered with the glow carrys forward the feeling that the user in an arcade.
+With the colour scheme I picked two colours that I felt complimented each other well on (https://coolors.co/). I also inspected the colours in my background image and selected a few that would blend. I feel the neon orange partnered with the glow carrys forward the arcade vibe that my work tries to express.
 
 ### Typography
 
-- I chose a Google font that I felt wasnt too professional and went along with the fun attention grasping theme I had in mind. The text is clear and easy to read and gives the buttons a smooth look.
+- I chose a Google font called Yanone Kaffeesatz that I felt wasnt over the top and went along with the fun attention grasping arcade theme I had in mind. The text is clear and easy to read and gives the buttons a smooth look.
 
-- font-awesome - used the icons from font awesome for the rock, paper, scissors, lizard, and spock options as they were easy to identify.
+- font-awesome - used the icons from font awesome for the rock, paper, scissors, lizard, and spock button options as they were easy to identify.
 
 ### Wireframe
 
@@ -88,6 +88,7 @@ With the colour scheme I picked two colours that I felt complimented each other 
 ![CSS Validation](documentation/testing/css-checker.png)
 ### JsHint
 ![JS Validation](documentation/testing/js-checker.png)
+
 
 ### Buttons 
 
