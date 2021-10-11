@@ -192,6 +192,7 @@ function reset() {
     document.querySelectorAll("i")[1].className = `fas fa-ghost`;
 }
 
+/** Model that opens when help button is clicked and closes when close or the outside window is clicked */
 function modalOpen() {
     let modal = document.getElementById("modal");
     let close = document.getElementById("close");
