@@ -32,8 +32,15 @@ function calcWinner(p1) {
     let cpu = calcCPU();
 
     //Change fontaswesome
-    document.getElementById("player-hand").className = `fas fa-hand-${p1}`;
-    document.getElementById("cpu-hand").className = `fas fa-hand-${cpu}`;
+    let p1Hand = document.getElementById("player-hand");
+    p1Hand.className = `fas fa-hand-${p1}`;
+    let cpuHand = document.getElementById("cpu-hand");
+    cpuHand.className = `fas fa-hand-${cpu}`;
+
+    //Clear all classes
+    feedback.classList.remove("winner", "loser");
+    p1Hand.classList.remove("winner", "loser");
+    cpuHand.classList.remove("winner", "loser");
 
     //Continues if game not a draw
     if (p1 === cpu) {
@@ -42,30 +49,48 @@ function calcWinner(p1) {
         //Rock beats scissors & lizard
         if (p1 === "rock" && (cpu === "scissors" || cpu === "lizard")) {
             feedback.innerText = "Round won!";
+            feedback.classList.add("winner");
+            p1Hand.classList.add("winner");
+            cpuHand.classList.add("loser");
             p1Score();
         }
         //Paper beats rock & spock
         else if (p1 === "paper" && (cpu === "rock" || cpu === "spock")) {
             feedback.innerText = "Round won!";
+            feedback.classList.add("winner");
+            p1Hand.classList.add("winner");
+            cpuHand.classList.add("loser");
             p1Score();
         }
         //Scissors beats paper & lizard
         else if (p1 === "scissors" && (cpu === "paper" || cpu === "lizard")) {
             feedback.innerText = "Round won!";
+            feedback.classList.add("winner");
+            p1Hand.classList.add("winner");
+            cpuHand.classList.add("loser");
             p1Score();
         }
         // Lizard beats paper & spock
         else if (p1 === "lizard" && (cpu === "paper" || cpu === "spock")) {
             feedback.innerText = "Round won!";
+            feedback.classList.add("winner");
+            p1Hand.classList.add("winner");
+            cpuHand.classList.add("loser");
             p1Score();
         }
         //Spock beats scissors & rock
         else if (p1 === "spock" && (cpu === "scissors" || cpu === "rock")) {
             feedback.innerText = "Round won!";
+            feedback.classList.add("winner");
+            p1Hand.classList.add("winner");
+            cpuHand.classList.add("loser");
             p1Score();
 
         } else {
             feedback.innerText = "Round lost!";
+            feedback.classList.add("loser");
+            p1Hand.classList.add("loser");
+            cpuHand.classList.add("winner");
             cpuScore();
         }
     }
@@ -170,8 +195,9 @@ function reset() {
 function modalOpen() {
     let modal = document.getElementById("modal");
     let close = document.getElementById("close");
+    console.log(modal.style.display);
     // display model on click if its not already showing
-    if (modal.style.display = "none") {
+    if (modal.style.display == "" || modal.style.display == "none") {
         modal.style.display = "block";
     }
     // When the user clicks on <span> (x), close the modal
