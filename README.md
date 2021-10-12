@@ -88,7 +88,8 @@ This display shows the scores of CPU and the player as well as what options they
  - [Gitpod](https://gitpod.io/) used for writing up the code.
  - [GitHub](https://github.com/devisis/rock-paper-scissors-lizard-spock) used for the IDE.
  - [invision](https://www.invisionapp.com/) To create wireframes.
- - Grid and Flexbox for the positioning of elements.s
+ - Grid and Flexbox for the positioning of elements.
+ - [ShareX](https://getsharex.com/) for capturing screenshots and gifs
 
 
 ## Testing 
@@ -107,6 +108,8 @@ This display shows the scores of CPU and the player as well as what options they
 - Reset button fully operational. 
 - Help button fully operational. 
 - Buttons disabled after game win/loss.
+
+![Button Testing](documentation/testing/button-testing.gif)
 
 
 
