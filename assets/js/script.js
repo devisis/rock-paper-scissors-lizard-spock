@@ -113,7 +113,7 @@ let cpuStats = {
 };
 
 let select = document.querySelector("#playto");
-let limit = 3;
+let limit = 10;
 
 select.addEventListener('change', function () {
     limit = parseInt(this.value);
