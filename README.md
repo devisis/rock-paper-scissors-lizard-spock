@@ -85,9 +85,10 @@ This display shows the scores of CPU and the player as well as what options they
  - CSS used for style.
  - JS used for website functionality.
  - GIT version control and commit messages.
- - Gitpod used for writing up the code.
- - GitHub used for the IDE.
+ - [Gitpod](https://gitpod.io/) used for writing up the code.
+ - [GitHub](https://github.com/devisis/rock-paper-scissors-lizard-spock) used for the IDE.
  - [invision](https://www.invisionapp.com/) To create wireframes.
+ - Grid and Flexbox for the positioning of elements.s
 
 
 ## Testing 
