@@ -30,6 +30,7 @@ The site goal is to provide a game to entertain online users.
 ### Colour Scheme
 
 With the colour scheme I picked two colours that I felt complimented each other well on (https://coolors.co/). I also inspected the colours in my background image and selected a few that would blend. I feel the neon orange partnered with the glow carrys forward the arcade vibe that my work tries to express.
+![Pallete](assets/images/palette.png)
 
 ### Typography
 
@@ -126,22 +127,53 @@ I have tested the site on:
 
 Using the developer tools on Google Chrome I tested my website's dimentions on iPhone 5/SE, iPhone X, iPad and the Pixel 2 on both landscape and portrait modes. 
 
+#### iPhone 5/GE
+
+![iPhone 5](documentation/testing/iphone5.png)
+
+#### iPhone X
+
+![iPhone X](documentation/testing/iphoneX.png)
+
+#### iPad
+
+![iPad](documentation/testing/ipad.png)
+
 On the iPhone 5/SE the site was not correctly scaled as seen [here](/workspace/rock-paper-scissors-lizard-spock/documentation/testing/responsiveness-error.png). I noted and fixed this issue by changing the css. The result can be seen [here](/workspace/rock-paper-scissors-lizard-spock/documentation/testing/responsiveness-fix.png).
 
 ### Testing User Stories
 
 "As a user I should be able to understand the difference between each set option."
+
     - I have added labels and to every button and fontawesone icons to each main game button selection.
+![button selection](documentation/features/button-selection.png)
+
 "As a user I should be able to find out how to play."
-    - A help button has been added and documents the rules of the game when clicked 
+
+    - A help button has been added and documents the rules of the game when clicked.
+![rules](documentation/features/rules.png)
+
 "As a user I should be abe to reset the game."
-    - A reset button that returns the game to default once clicked has been added"
+
+    - A reset button that returns the game to default once clicked has been added.
+![reset](documentation/features/reset.gif)
+
 "As a user I should be able to choose the amount of game I want to play to."
-    - 
-"As a user I should be able to distinguise between rock, paper, scissors, lizard and spock."
-    -
+
+    - A dropdown has been added so the user can pick the amount of games to play.
+![first to](documentation/features/first-to.png)
+
+"As a user I should be able to distinguish between rock, paper, scissors, lizard and spock."
+    
+    - When clicked the buttons appear in the user score display area.
+    - The buttons are all labeled and paired with font awesome icons.
+![selection](documentation/features/score-button-selection.png)
+
 "As a user I should be able to track my score."
-    -
+    
+    - The score is incremented by 1 every time you win.
+![score](documentation/testing/button-testing.gif)
+
 
 ### Unfixed Bugs
 
