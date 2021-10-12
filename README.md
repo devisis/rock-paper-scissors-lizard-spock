@@ -94,13 +94,14 @@ This display shows the scores of CPU and the player as well as what options they
 
 ## Testing 
 
-### HTML validator
-![HTML Validation](documentation/testing/html-checker.png)
-### CSS validator
-![CSS Validation](documentation/testing/css-checker.png)
-### JsHint
-![JS Validation](documentation/testing/js-checker.png)
+### Code Validation
 
+#### HTML validator
+![HTML Validation](documentation/testing/html-checker.png)
+#### CSS validator
+![CSS Validation](documentation/testing/css-checker.png)
+#### JsHint
+![JS Validation](documentation/testing/js-checker.png)
 
 ### Buttons 
 
@@ -111,16 +112,15 @@ This display shows the scores of CPU and the player as well as what options they
 
 ![Button Testing](documentation/testing/button-testing.gif)
 
-
-
-### Code Validation
-
 ### Browser Compatibility
 
 I have tested the site on:
-- [Microsoft Edge](documentation/compatability/edge-compatability.jpg) 
-- [Google Chrome](documentation/compatability/chrome-compatability.png) 
-- [Firefox](documentation/compatability/firefox-compatability.jpg)
+- Microsoft Edge 
+    - ![Microsoft Edge](documentation/compatability/edge-compatability.jpg)
+- Google Chrome 
+    - ![Google Chrome](documentation/compatability/chrome-compatability.png) 
+- Firefox 
+    - ![Firefox](documentation/compatability/firefox-compatability.jpg)
 
 ### Responsiveness
 
@@ -130,7 +130,18 @@ On the iPhone 5/SE the site was not correctly scaled as seen [here](/workspace/r
 
 ### Testing User Stories
 
-
+"As a user I should be able to understand the difference between each set option."
+    - I have added labels and to every button and fontawesone icons to each main game button selection.
+"As a user I should be able to find out how to play."
+    - A help button has been added and documents the rules of the game when clicked 
+"As a user I should be abe to reset the game."
+    - A reset button that returns the game to default once clicked has been added"
+"As a user I should be able to choose the amount of game I want to play to."
+    - 
+"As a user I should be able to distinguise between rock, paper, scissors, lizard and spock."
+    -
+"As a user I should be able to track my score."
+    -
 
 ### Unfixed Bugs
 
@@ -157,8 +168,8 @@ Alternatively, if you are using Gitpod, you can use this link:
 ### Media
 
 - [google fonts](https://fonts.google.com/specimen/Yanone+Kaffeesatz#standard-styles)
-- [pngwing](https://www.pngwing.com/) used for the favicon.
-- [unsplash](https://unsplash.com/) used for the arcade background image.
+- [pngwing](https://www.pngwing.com/en/free-png-kxgsj) used for the favicon.
+- [unsplash](https://unsplash.com/photos/m3hn2Kn5Bns) used for the arcade background image.
 - [fontawesome](https://fontawesome.com/) used for the icons.
 
 ### Acknowledgements
